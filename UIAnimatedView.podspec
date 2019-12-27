@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/iSerg/UIAnimatedView.git',
     :tag => s.version.to_s
   }
-  s.source_files = 'Source'
+  s.source_files = 'Source/**'
   s.requires_arc = true
+  s.frameworks = 'UIKit'
+  s.swift_version = '5.0'
 end
