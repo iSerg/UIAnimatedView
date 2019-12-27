@@ -11,14 +11,14 @@ Pod::Spec.new do |s|
     :file => 'LICENSE'
   }
   s.author = { "Serhii" => "madrudenko@gmail.com" }
-  s.ios.deployment_target = '11.0'
+  
 
   s.source = {
     :git => 'https://github.com/iSerg/UIAnimatedView.git',
     :tag => s.version.to_s
   }
+  s.ios.deployment_target = '10.0'
   s.source_files = 'Source/**'
-  s.requires_arc = true
   s.frameworks = 'UIKit'
-  s.swift_version = '5.0'
+  s.swift_version = '4.0'
 end
