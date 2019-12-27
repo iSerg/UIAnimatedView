@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIAnimatedView: UIView {
+public final class UIAnimatedView: UIView {
 
     private var tapBeganProcess:Bool = false
     private var wasTapCancel:Bool = false
