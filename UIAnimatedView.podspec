@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/iSerg/UIAnimatedView"
   s.license = {
     :type => 'MIT',
-    :file => 'LICENSE.md'
+    :file => 'LICENSE'
   }
   s.author = { "Serhii" => "madrudenko@gmail.com" }
   s.ios.deployment_target = '11.0'
