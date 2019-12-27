@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = "AnimatedView"
+  s.name = "UIAnimatedView"
   s.version = "0.0.1"
   s.summary = "Resize view on tap"
   s.description = <<-DESC
