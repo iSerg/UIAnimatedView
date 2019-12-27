@@ -44,7 +44,7 @@ public final class UIAnimatedView: UIView {
     }
     
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             
             self.runTimer()
@@ -89,7 +89,7 @@ public final class UIAnimatedView: UIView {
         }
     }*/
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first{
             
             self.wasTapEnd = true
@@ -115,7 +115,7 @@ public final class UIAnimatedView: UIView {
     }
     
     
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.first != nil {
             //let currentPoint = touch.location(in: self)
             // do something with your currentPoint
