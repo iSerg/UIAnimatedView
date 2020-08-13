@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class UIAnimatedView: UIView {
+open class UIAnimatedView: UIView {
 
     private var tapBeganProcess:Bool = false
     private var wasTapCancel:Bool = false
@@ -28,18 +28,18 @@ public final class UIAnimatedView: UIView {
     var didLongTapHandler:(_ object: UIAnimatedView)->Void = {_ in }
     
     
-    func setupHandler(scale_x:CGFloat, scale_y:CGFloat, alpha:CGFloat, didSelectCollection:@escaping(_ object: UIAnimatedView) ->()) {
+    open func setupHandler(scale_x:CGFloat, scale_y:CGFloat, alpha:CGFloat, didSelectCollection:@escaping(_ object: UIAnimatedView) ->()) {
         didSelectHandler = didSelectCollection
         self.selected_alpha = alpha
         self.scaleX = scale_x
         self.scaleY = scale_y
     }
     
-    func setupHandler(didSelectCollection:@escaping(_ object: UIAnimatedView) ->()) {
+    open func setupHandler(didSelectCollection:@escaping(_ object: UIAnimatedView) ->()) {
         didSelectHandler = didSelectCollection
     }
     
-    func setupLongPressHandler(didLongTap:@escaping(_ object: UIAnimatedView) ->()) {
+    open func setupLongPressHandler(didLongTap:@escaping(_ object: UIAnimatedView) ->()) {
         didLongTapHandler = didLongTap
     }
     
