@@ -27,7 +27,7 @@ open class UIAnimatedView: UIView {
     var didSelectHandler:(_ object: UIAnimatedView)->Void = {_ in }
     var didLongTapHandler:(_ object: UIAnimatedView)->Void = {_ in }
     
-    
+    @objc
     open func setupHandler(scale_x:CGFloat, scale_y:CGFloat, alpha:CGFloat, didSelectCollection:@escaping(_ object: UIAnimatedView) ->()) {
         didSelectHandler = didSelectCollection
         self.selected_alpha = alpha
